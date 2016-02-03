@@ -17,7 +17,7 @@ Sometimes, the following happens:
 .. image:: ./misc/Problem_KWF.png
    :width: 200 px
 
-The image shows a linking of WGMS to RGI. Unfortunately, the WGMS point lies outside the orange RGI glacier outline of Kesselwandferner so that an automatic linking based on spatial relations is not possible. The closest RGI polygon found
+The image shows a linking of WGMS to RGI. Unfortunately, the WGMS point lies outside the orange RGI glacier outline of Kesselwandferner so that an automatic linking based on spatial relations is not possible. The closest RGI polygon found is the red neighbor glacier, which is obviously the wrong one.
 
 The good thing is: Kesselwandferner is a "famous" glacier and thus has a name attribute in RGI. This makes the correction a lot easier.
 
