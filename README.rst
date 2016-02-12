@@ -14,7 +14,7 @@ Example
 
 Sometimes, the following happens:
 
-.. image:: ./misc/Problem_KWF.png
+.. image:: ./misc/AT_Kesselwandferner_solved.png
    :width: 200 px
 
 The image shows a linking of WGMS to RGI. Unfortunately, the WGMS point lies outside the orange RGI glacier outline of Kesselwandferner so that an automatic linking based on spatial relations is not possible. The closest RGI polygon found is the red neighbor glacier, which is obviously the wrong one.
