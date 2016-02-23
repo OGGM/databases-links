@@ -6,11 +6,11 @@ The dataset links are based on glaciers in a "starting" inventory. Further colum
 
 |
 
-**<starting_inventory>_<region>_to_<inventory\ :sub:`1`\ >_..._<inventoryn>_<YYYmmdd>.csv**
+**Manual_links_<starting_inventory>_to_<inventory1>_..._<inventoryn>_<region>_<YYYmmdd>.csv**
 
 |
 
-At the moment, <region> can be either "ALPS" or "WORLD" and <YYYYmmdd> is the date the file was completed and issued.
+At the moment, <region> can be either "ALPS" or "WORLD" and <YYYYmmdd> is the date the file was issued.
 
 The files are regular comma-separated CSVs with a header line and an unnamed internal column which you can just ignore. Important are the ``status`` and ``remark`` columns: if the ``status`` is set to ``True``, we believe that our findings are correct and can be used like this. If ``False``, there is an ambiguity concerning this glacier - this might also be that there are for example **multiple RGI polygons** belonging to one ID of the starting inventory.
 
@@ -26,4 +26,4 @@ The internet is really a great source of knowledge, but still not everything is 
 **Thank you for your help!!!**
 
 
-.. _johannes.landmann[at]student.uibk.ac.at: johannes.landmann@student.uibk.ac.at
+.. _johannes.landmann[at]student.uibk.ac.at: mailto:johannes.landmann@student.uibk.ac.at

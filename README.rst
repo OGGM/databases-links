@@ -14,28 +14,32 @@ Example
 
 Sometimes, the following happens:
 
-.. image:: ./misc/AT_Kesselwandferner_solved.png
+.. image:: ./misc/CL_Toro1_solved.png
    :width: 200 px
 
-The image shows a linking of WGMS to RGI. Unfortunately, the WGMS point lies outside the orange RGI glacier outline of Kesselwandferner so that an automatic linking based on spatial relations is not possible. The closest RGI polygon found is the red neighbor glacier, which is obviously the wrong one.
+The image shows a linking of WGMS to RGI, GlaThiDa and Leclercq. The object we're looking for is WGMS glacier "Toro 1" in Chile, WGMS ID 3980 (see title of left plot). Unfortunately, the coordinates of the green WGMS point are rounded and lie outside the red RGI outline of the glacier. Accordingly, an automated linking is not possible. The red GlaThiDa cross (ID:232) belongs to Toro 2 (hardly visible for graphical reasons), which is the orange RGI outline. Visually, however, it is closer to Toro 1. Leclercq entries on the plot area do not exist, otherwise they would be visible.
 
-The good thing is: Kesselwandferner is a "famous" glacier and thus has a name attribute in RGI. This makes the correction a lot easier.
+However, from this plot it cannot be concluded that there is in fact no Leclercq entry for one of the glaciers. For example GlaThiDa 234 for glacier Esperanza is quite far away from the violet glacier outline. Assuming that the Leclercq point for Esperanza was situated at the same distance to the glacier, but in a western direction, it was not detectable on the plot (boundaries are determined by the five closest RGI polygons around the WGMS point plus some buffer). It follows that all links have to be checked also in "the other direction", i.e. with another inventory as starting point.
 
 
 Method
 ------
 
-Our linking approach based on the WGMS inventory includes mainly the following steps:
+Our linking approach includes mainly the following steps:
 
-1. Selection of all glaciers with more than 5 mass balance measurements. This is necessary in order to keep the number of glaciers to check manageable.
+1. Selection of all glaciers with more than five mass balance measurements in WGMS. This is necessary in order to keep the number of glaciers to check manageable.
 
-2. Calculating the `Haversine distance <https://en.wikipedia.org/wiki/Haversine_formula>`_ of all glaciers in RGI, GlaThiDa and Leclercq's collection to each respective WGMS point
+2. Calculation of the `Haversine distance <https://en.wikipedia.org/wiki/Haversine_formula>`_ of each glacier in the starting inventory to all glaciers in the target inventories
 
-3. Take the five closest RGI polygons and their exterior coordinates to set up a map supported by Google Maps terrain and visual base images
+3. Taking the five closest RGI polygons and their exterior coordinates to set up a map supported by Google Maps terrain and visual satellite base images
 
-4. Check whether or not GlaThiDa and Leclercq points are on the grid - not every WGMS glacier has a GlaThiDa/Leclercq equivalent
+4. Checking whether or not glacier points from the inventories to be linked are on the grid - not every  glacier in the starting inventory has an equivalent in the target inventories
 
-5. Wherever possible, add some extra info obtained through a manual linking file compiled by Graham Cogley
+5. Creating a CSV file with all selected glaciers from the starting inventory linked to the closest entries in the target inventories
+
+6. Manually checking the automated links with the help of internet images, research papers, etc.
+
+7. Using all target inventories as starting inventories while employing the "safe" links that have already been established
 
 
 
