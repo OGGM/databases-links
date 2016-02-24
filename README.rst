@@ -3,7 +3,7 @@ Linking glaciological databases
 
 Motivation
 ----------
-The recent development of open access glaciological databases (glacier outlines, mass-balance, thickness...) allows important advances in the field of global scale glaciology. However, employing data from different sources can be challenging as the various datasets have different histories and standards. In the case of glacier inventories, for example, glacier coordinates might be outdated or have rounding errors and linking the databases becomes impossible without expert knowledge. Here, we implement a semi-automated tool to link the Randolph Glacier Inventory (`RGI 5.0 <http://www.glims.org/RGI/rgi50_dl.html>`__), the World Glacier Monitoring Service Fluctuation of Glaciers dataset (`WGMS FoG 2014 <http://wgms.ch/downloads/DOI-WGMS-FoG-2015-11.zip>`__), Glacier Thickness Dataset (`GlaThiDa 2014 <http://www.gtn-g.ch/data_catalogue_glathida/>`__) and glacier length fluctuations compiled by `P. Leclercq <http://folk.uio.no/paulwl/length.php>`__. As we have to cross-check all automatic linkings manually, we restrict to glaciers with more than **five mass balance measurements** in the WGMS FoG dataset. Still, this comprises 259 world glaciers in total.
+The recent development of open access glaciological databases (glacier outlines, mass-balance, thickness...) allows important advances in the field of global scale glaciology. However, employing data from different sources can be challenging as the various datasets have different histories and standards. In the case of glacier inventories, for example, glacier coordinates might be outdated or have rounding errors and linking the databases becomes impossible without expert knowledge. Here, we implement a semi-automated tool to link the Randolph Glacier Inventory (`RGI 5.0 <http://www.glims.org/RGI/rgi50_dl.html>`__), the World Glacier Monitoring Service Fluctuation of Glaciers dataset (`WGMS FoG 2014 <http://wgms.ch/data_databaseversions/>`__), Glacier Thickness Dataset (`GlaThiDa 2014 <http://www.gtn-g.ch/data_catalogue_glathida/>`__) and glacier length fluctuations compiled by `P. Leclercq <http://folk.uio.no/paulwl/length.php>`__. As we have to cross-check all automatic linkings manually, we restrict to glaciers with more than **five mass balance measurements** in the WGMS FoG dataset. Still, this comprises 259 world glaciers in total.
 
 We provide all our results on this page! Feel free to download them, bring up your own ideas to improve the method or contact us.
 
@@ -27,7 +27,7 @@ Method
 
 Our linking approach includes mainly the following steps:
 
-1. Selection of all glaciers with more than five mass balance measurements in WGMS. This is necessary in order to keep the number of glaciers to check manageable.
+1. Pre-selection in order to keep the number of glaciers to check manageable. WGMS: All glaciers with more than 5 MB measurements in the Alps and worldwide. No pre-selection of GlaThiDa and Leclercq in the Alps.
 
 2. Calculation of the `Haversine distance <https://en.wikipedia.org/wiki/Haversine_formula>`_ of each glacier in the starting inventory to all glaciers in the target inventories
 
