@@ -163,7 +163,7 @@
 47;119;Märjelenbreen;['RGI50-07.00232'];6.4;5.411;-15.453125;77.4474;15.4583;120.0;73.0;467.2;True;automated correct
 48;123;Finsterwalderbr;['RGI50-07.00231'];38.0;34.04;-10.4210526316;77.483;15.25;175.0;74.0;2812.0;True;automated correct
 49;126;Borebreen;['RGI50-07.00464'];120.0;110.25;-8.125;78.4417;13.9;185.0;111.0;13320.0;True;automated correct
-50;130;Vestgötabreen;['RGI50-07.00312'];12.6;10.772;-14.5079365079;78.462;12.9026;145.0;100.0;1260.0;True;"automated correct; Name in RGI5.0 wrong (Hydrografbreen)"
+50;130;Vestgötabreen;['RGI50-07.00312'];12.6;10.772;-14.5079365079;78.462;12.9026;145.0;100.0;1260.0;True;automated correct. Name in RGI5.0 wrong (Hydrografbreen)
 51;132;Hydrografbreen;['RGI50-07.00311'];12.8;13.115;2.4609375;78.4552;12.7506;110.0;63.0;806.4;True;automated correct
 52;136;Idabreen;['RGI50-07.00775'];11.4;12.934;13.4561403509;79.599;12.2719;100.0;68.0;775.2;True;automated correct
 53;139;Løvliebreen;['RGI50-07.00305'];11.0;11.047;0.427272727273;78.4754;13.0411;165.0;99.0;1089.0;True;automated correct
