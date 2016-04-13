@@ -5,7 +5,7 @@ We have started to also link single GlaThiDa 2014 entries to multiple RGI5.0 pol
 Results can be found in the file `Manual_links_GlaThiDa_to_RGI_WORLD_20160412_multiple_included.csv`
 This has implications on the data structure as now the RGI equivalents are given as lists.
 
-The separator has changed from comma to semicolon and it's a bit tricky to read the files now as there are problems with the interpretation of the list entries. Reading in Python can be done the following:
+The separator has changed from comma to semicolon and it's a bit tricky to read the files now as there are problems with the interpretation of the list entries. For this reason, it is also not displayable in the "beautiful and searchable" GitHub way. Reading in Python can be done the following:
 
 |
 
